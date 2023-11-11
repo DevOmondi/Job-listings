@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .skill-level {
+    @apply rounded bg-light_cyan px-1.5 w-auto text-primary font-bold hover:bg-primary hover:text-white hover:cursor-pointer;
+  }
+  .filter-div {
+    @apply flex items-center w-auto;
+  }
+  .filter-text-section {
+    @apply rounded-l bg-light_cyan px-1.5;
+  }
+  .close-icon {
+    @apply bg-primary p-1 rounded-r;
+  }
+}

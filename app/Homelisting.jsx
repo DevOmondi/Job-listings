@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import companyLogo from "../public/images/photosnap.svg";
+// import companyLogo from "../public/images/photosnap.svg";
 
 const Homelisting = ({ listingObject }) => {
   return (
@@ -42,26 +42,25 @@ const Homelisting = ({ listingObject }) => {
           </div>
         </div>
         <div className="flex flex-wrap gap-3">
-          {listingObject.languages?.map((language, index) => (
+          <p className="skill-level">
+            {listingObject?.level}
+          </p>
+          {listingObject.languages?.map((language) => (
             <p
-              key={index}
-              className="rounded bg-light_cyan px-1.5 w-auto text-primary font-bold hover:bg-primary hover:text-white hover:cursor-pointer"
+              key={language.id}
+              className="skill-level"
             >
               {language}
             </p>
           ))}
-          {/* <p className="rounded bg-light_cyan px-1.5 w-auto text-primary font-bold hover:bg-primary hover:text-white hover:cursor-pointer">
-            Senior
-          </p>
-          <p className="rounded bg-light_cyan px-1.5 w-auto text-primary font-bold hover:bg-primary hover:text-white hover:cursor-pointer">
-            HTML
-          </p>
-          <p className="rounded bg-light_cyan px-1.5 w-auto text-primary font-bold hover:bg-primary hover:text-white hover:cursor-pointer">
-            CSS
-          </p>
-          <p className="rounded bg-light_cyan px-1.5 w-auto text-primary font-bold hover:bg-primary hover:text-white hover:cursor-pointer">
-            JavaScript
-          </p> */}
+          {listingObject.tools?.map((tool) => (
+            <p
+              key={tool.id}
+              className="skill-level"
+            >
+              {tool}
+            </p>
+          ))}
         </div>
         {/* </div> */}
       </div>

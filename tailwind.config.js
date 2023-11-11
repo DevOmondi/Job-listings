@@ -15,8 +15,8 @@ module.exports = {
         very_dark_cyan: "#2c3a3a",
       },
       backgroundImage: {
-        "mobile-bg": "url('/public/images/bg-header-mobile.svg')",
-        "desktop-bg": "url('/public/images/bg-header-desktop.svg')",
+        "mobile-bg": "url('/public/bg-header-mobile.svg')",
+        "desktop-bg": "url('/public/bg-header-desktop.svg')",
       },
     },
   },
